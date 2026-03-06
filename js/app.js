@@ -6,7 +6,7 @@ const errorContainer = document.getElementById('error-container');
 const input = document.querySelector('.form-field input');
 const formLabel = document.querySelector('.form-field .form-label');
 
-document.getElementById('year').textContent = new Date().getFullYear();
+// document.getElementById('year').textContent = new Date().getFullYear();
 
 const toggleModalAndReset = () => {
     modal.classList.toggle('is-hidden');
