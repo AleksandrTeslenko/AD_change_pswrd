@@ -1,0 +1,13 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform": {
+           "php": "7.4.3"
+        }
+    }
+}

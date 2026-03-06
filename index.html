@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Directory Password Reset Web Interface</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./img/favicon-128x128.png" alt="Oleksandr Teslenko" class="logo">
+        </a>
+    </header>
+
+    <main>
+        <button id="btn-change-ad-pswrd" class="btn">Active Directory Password Reset</button>
+        <img class="main-image" src="./img/interface-001.png" alt="Preview">
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <span>©</span><span id="year">2025</span>Oleksandr Teslenko</a><span> – All rights reserved</span>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal is-hidden">
+        <div class="modal-content">
+            <button class="modal-btn-close" type="button">&times;</button>
+            <h2>Update password</h2>
+            <form id="form-change-ad-pswrd">
+                <div class="form-field">
+                    <label class="form-label" for="login">Login</label>
+                    <input type="login" id="login" name="login" title="Please fill in this field." placeholder=""
+                        required>
+                    <img class="icon-login" src="./img/user.png" alt="">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="pswrd">Old password</label>
+                    <input type="password" id="pswrd" name="pswrd" title="Please fill in this field." autocomplete="off"
+                        value="" required>
+                    <span class="toggle-icon-pswrd">🔒</span>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="new-pswrd">New password</label>
+                    <input type="password" id="new-pswrd" name="new-pswrd" title="Please fill in this field."
+                        autocomplete="off" value="" required>
+                    <span class="toggle-icon-pswrd">🔒</span>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="confirm-pswrd">Confirmation</label>
+                    <input type="password" id="confirm-pswrd" name="confirm-pswrd" title="Please fill in this field."
+                        autocomplete="off" value="" required>
+                    <span class="toggle-icon-pswrd">🔒</span>
+                </div>
+
+                <button class="btn" type="submit">Update</button>
+            </form>
+            <div id="error-container" class="error-message"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/app.js"></script>
